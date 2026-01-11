@@ -1,0 +1,7 @@
+打开终端输入训练代码
+
+yolo detect train data=D:/yolov8/ultralytics-main/ultralytics/data/datasets/1.yaml model=yolov8n.yaml pretrained=ultralytics/yolov8n.pt epochs=100 batch=4  workers=2 resume=True#训练代码
+
+yolo predict model=runs/detect/train/weights/best.pt source=insert.jpg#预测代码
+
+yolo train resume model=D:/yolov8/ultralytics-main/runs/detect/train4/weights/last.pt  epochs=100 save_period=50#继续训练
